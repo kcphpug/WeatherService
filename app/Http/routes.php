@@ -14,3 +14,24 @@
 $app->get('/', function() use ($app) {
     return $app->welcome();
 });
+
+$app->get('{path:.*}', function($path) use ($app) {
+    $headersToPass = ['Content-Type','X-Pagination'];
+    $rootUrl = 'http://api.openweathermap.org/data/2.5/';
+    $queryString = $_SERVER['QUERY_STRING'];
+
+    $passThrough = $app->make('App\PassThrough', [$rootUrl]);
+
+    $result = $passThrough->getResultsForPath($path, $queryString);
+
+    return response(
+        $result['body'],
+        $result['status'],
+        array_only(
+            $result['headers'],
+            $headersToPass
+        )
+    );
+});
+
+
