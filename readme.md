@@ -11,7 +11,7 @@ cd WeatherService/public
 php -S 127.0.0.1:8800 index.php 
 ````
 
-## Credits:
+## Credits
 ### Intro to AngularJS
 Meeting on May 13, 2015 | By Lee Brandt from PaigeLabs
 AngularJS portions based on what we did at a recent GDGKC meeting:
