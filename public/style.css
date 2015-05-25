@@ -1,0 +1,6 @@
+/* Put your css in here */
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+    background:black !important;
+}

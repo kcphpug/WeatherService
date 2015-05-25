@@ -1,18 +1,7 @@
 <?php
 
-/*
-|--------------------------------------------------------------------------
-| Application Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register all of the routes for an application.
-| It's a breeze. Simply tell Laravel the URIs it should respond to
-| and give it the controller to call when that URI is requested.
-|
-*/
-
 $app->get( '/', function () use ( $app ) {
-    return $app->welcome();
+    return view('weather', ['name' => 'Weather Enthusiast']);
 } );
 
 $app->get( '{path:.*}', function ( $path ) use ( $app ) {
@@ -22,6 +11,7 @@ $app->get( '{path:.*}', function ( $path ) use ( $app ) {
     $rootUrl       = 'http://api.openweathermap.org/data/2.5/';
 
     $queryString = $_SERVER['QUERY_STRING'];
+
     $result      = Cache::remember(
         $path . $queryString,
         $cacheTtl,
@@ -30,7 +20,6 @@ $app->get( '{path:.*}', function ( $path ) use ( $app ) {
 
             return $passThrough->getResultsForPath( $path, $queryString );
         }
-
     );
 
     return response(
