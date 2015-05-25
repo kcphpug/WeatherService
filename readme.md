@@ -1,21 +1,27 @@
-## Lumen PHP Framework
+## KC PHPUG - Weather Service Example Project
 
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://poser.pugx.org/laravel/lumen-framework/d/total.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://poser.pugx.org/laravel/lumen-framework/v/stable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Unstable Version](https://poser.pugx.org/laravel/lumen-framework/v/unstable.svg)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://poser.pugx.org/laravel/lumen-framework/license.svg)](https://packagist.org/packages/laravel/lumen-framework)
+## Installation
+Works great with PHP's developement webserver, Laravel's Homestead
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+````bash
+git checkout git@github.com:kcphpug/WeatherService.git WeatherService
+cd WeatherService
+composer install
+cd WeatherService/public
+php -S 127.0.0.1:8800 index.php 
+````
 
-## Official Documentation
+## Credits:
+### Intro to AngularJS
+Meeting on May 13, 2015 | By Lee Brandt from PaigeLabs
+AngularJS portions based on what we did at a recent GDGKC meeting:
+http://www.meetup.com/GDG-Kansas-City/events/222165008/
+http://plnkr.co/edit/VcqkgwBnPxnhXQ4hnw8g
+https://github.com/leebrandt/AdvancedAngular
 
-Documentation for the framework can be found on the [Lumen website](http://lumen.laravel.com/docs).
+### Introducing Lumen from Laravel
+Posted on April 14, 2015 | By Matt Stauffer
+https://mattstauffer.co/blog/introducing-lumen-from-laravel
 
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
-
-### License
-
-The Lumen framework is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+## License
+This project is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
