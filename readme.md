@@ -1,7 +1,7 @@
 ## KC PHPUG - Weather Service Example Project
 
 ## Installation
-Works great with PHP's development web server, Laravel's Homestead
+Works great with PHP's development web server or [Laravel Homestead](http://laravel.com/docs/4.2/homestead)
 
 ````bash
 git clone git@github.com:kcphpug/WeatherService.git WeatherService
