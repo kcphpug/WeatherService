@@ -1,13 +1,14 @@
 ## KC PHPUG - Weather Service Example Project
 
 ## Installation
-Works great with PHP's developement webserver, Laravel's Homestead
+Works great with PHP's development web server, Laravel's Homestead
 
 ````bash
-git checkout git@github.com:kcphpug/WeatherService.git WeatherService
+git clone git@github.com:kcphpug/WeatherService.git WeatherService
 cd WeatherService
 composer install
-cd WeatherService/public
+cp .env.example .env
+cd public
 php -S 127.0.0.1:8800 index.php 
 ````
 
