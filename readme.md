@@ -47,4 +47,4 @@ Looking for ideas of things to add?
 * Change [Lumen caching](lumen.laravel.com/docs/cache] to using memcached or Redis
 * Add some application logging
 * Add some additional metadata to the proxyed request that shows the date pulled or even cache hits
- 
+* Unit Tests for PassThrough (may need refactoring) 
