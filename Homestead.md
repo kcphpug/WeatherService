@@ -1,4 +1,4 @@
-# Dan's guide to adding a Homestead VM to your project
+# Adding a Homestead VM to your project
 I'm always on the lookout for great ways to answer the question "How do I get started in PHP?"  Sometimes, the hardest part is figuring out the server side of it, and everything you need to build something.
 
 Homestead is a pre-configured, virtual server in a box.  Easy to add to your project and has probably more services than you need but things you maybe haven't tried because you didn't know how to install them.
