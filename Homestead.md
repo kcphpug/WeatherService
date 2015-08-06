@@ -114,7 +114,6 @@ git commit -m "Adding the Homestead VM to my project"
 git push
 ```
 
-### References
 [VirtualBox]: https://www.virtualbox.org/wiki/Downloads
 [Vagrant]: http://www.vagrantup.com/downloads.html
 [Homestead]: http://laravel.com/docs/5.1/homestead
